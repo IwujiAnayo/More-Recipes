@@ -1,0 +1,39 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+* {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+body{
+  background-color:white ;
+}
+#vessel{
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: black;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.img-responsive{
+  height: 150px;
+}
+p{
+  color: green;
+}
+.cat{
+  color: #fff;
+}
+.col-sm-3 .container{
+  height: :800px;
+}
+.navbar-brand{
+  text-align: center;
+}
+.h2{
+  color: white;
+}
