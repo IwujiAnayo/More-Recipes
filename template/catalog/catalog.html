@@ -1,16 +1,11 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Recipe Catalog</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="test.css">
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="catalog.css">
 </head>
 <body>
 
@@ -24,19 +19,20 @@
   </nav>
  <input class="form-control" id="myInput" type="text" placeholder="Search.."> <br><br><br><br>
 <div class="h2">favorite Recipes</div>
-<div class="col-sm-3 container" style="background-color:red">
+<div class="row">
+
+<div class="col-sm-3 container"  style="background-color:red">
   <ul class="list-group">
-  <li class="list-group-item">ghanga soup <span class="badge">3</span></li>
-  <li class="list-group-item">chicken stew <span class="badge">5</span></li>
-  <li class="list-group-item">yam vegetable <span class="badge">7</span></li>
-  <li class="list-group-item">jeloof rice <span class="badge">12</span></li>
-  <li class="list-group-item">orange chicken<span class="badge">15</span></li>
-  <li class="list-group-item">patties <span class="badge">16</span></li>
-  <li class="list-group-item">tomato bredie<span class="badge">21</span></li>
-  <li class="list-group-item">plantan <span class="badge">23</span></li>
-  <li class="list-group-item">fish curry with coconut <span class="badge">24</span></li>
-  <li class="list-group-item">gbofloto <span class="badge">26</span></li>
-  <li class="list-group-item">poiki <span class="badge">27</span></li>
+  <li class="list-group-item" onmouseover="changecolor(this)" onmouseout="normalcolor(this)">ghanga soup <span class="badge">3</span></li>
+  <li class="list-group-item" onmouseover="changecolor(this)" onmouseout="normalcolor(this)">chicken stew <span class="badge">5</span></li>
+  <li class="list-group-item" onmouseover="changecolor(this)" onmouseout="normalcolor(this)">yam vegetable <span class="badge">7</span></li>
+  <li class="list-group-item" onmouseover="changecolor(this)" onmouseout="normalcolor(this)">jeloof rice <span class="badge">12</span></li>
+  <li class="list-group-item" onmouseover="changecolor(this)" onmouseout="normalcolor(this)">orange chicken<span class="badge">15</span></li>
+  <li class="list-group-item" onmouseover="changecolor(this)" onmouseout="normalcolor(this)">patties <span class="badge">16</span></li>
+  <li class="list-group-item" onmouseover="changecolor(this)" onmouseout="normalcolor(this)">tomato bredie<span class="badge">21</span></li>
+  <li class="list-group-item" onmouseover="changecolor(this)" onmouseout="normalcolor(this)">plantan <span class="badge">23</span></li>
+  <li class="list-group-item" onmouseover="changecolor(this)" onmouseout="normalcolor(this)">fish curry with coconut <span class="badge">24</span></li>
+
 </ul>
 </div>
 <div class="col-sm-9">
@@ -85,10 +81,25 @@
 
 </div>
 </div>
+</div>
 
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script>
+function changecolor(x) {
+    x.style.color = "red";
+
+}
+
+function normalcolor(x) {
+    x.style.color = "black";
+}
+</script>
 
 </body>
 </html>

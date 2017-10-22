@@ -31,11 +31,11 @@ h3,p,li{
 
 .col-sm-6{
   display: block;
-  background-color: red;
+  background-color: white;
 }
 #imag{
-  text-align: centers;
-  background-color: red;
+  text-align: center;
+  background-color: white;
   margin: 0;
   padding: 0;
   border-radius: 0;
