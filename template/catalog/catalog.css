@@ -4,6 +4,23 @@
   border-radius: 0;
 }
 
+
+
+   /* Set gray background color and 100% height */
+   .navbar {
+     padding-top: 20px;
+     background-color: black;
+     height: 100%;
+   }
+
+   /* On small screens, set height to 'auto' for sidenav and grid */
+   @media screen and (max-width: 767px) {
+     .sidenav {
+       height: auto;
+       padding: 15px;
+     }
+     .row.content {height:auto;}
+   }
 #vessel{
   margin-bottom: 0;
   border-radius: 0;
@@ -28,9 +45,7 @@ p{
 .col-sm-3 .container{
   height: :800px;
 }
-.navbar-brand{
-  text-align: center;
-}
+
 .h2,.cat{
   color: red;
 }
